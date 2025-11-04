@@ -1,4 +1,4 @@
-# ObodoFarm 🌾
+# Refarm 🌾
 
 **A Decentralized Cooperative Platform for African Smallholder Farmers**
 
@@ -16,7 +16,7 @@ Smallholder farmers and livestock keepers in Nigeria face a triple bottleneck:
 
 ## 💡 Solution
 
-ObodoFarm is a **Farmer Cooperative-as-a-Service** that digitizes trust, aggregates supply, and unlocks working capital for smallholders through:
+Refarm is a **Farmer Cooperative-as-a-Service** that digitizes trust, aggregates supply, and unlocks working capital for smallholders through:
 
 - **On-chain governance** for transparent cooperative decision-making
 - **Tokenized pre-sales** and provenance tracking
@@ -30,7 +30,7 @@ ObodoFarm is a **Farmer Cooperative-as-a-Service** that digitizes trust, aggrega
 
 - **Frontend**: Next.js (React-based, mobile-responsive)
 - **Backend**: Express.js with MongoDB
-- **Blockchain**: Avalanche Subnet (ObodoFarm Subnet)
+- **Blockchain**: Avalanche Subnet (Refarm Subnet)
 - **Smart Contracts**: Avalanche Starter Kit (Solidity + OpenZeppelin)
 - **Mobile Integration**: Africa's Talking (USSD + SMS)
 - **AI Advisory**: Weather API + template-based crop tips
