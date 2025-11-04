@@ -18,10 +18,10 @@ const languages = [
 ]
 
 const welcomeMessages = {
-  en: "Welcome to ObodoFarm. Language changed to English.",
-  yo: "Káàbọ̀ sí ObodoFarm. Èdè ti yípadà sí Yorùbá.",
-  ha: "Barka da zuwa ObodoFarm. An canza harshe zuwa Hausa.",
-  ig: "Nnọọ na ObodoFarm. Agbanweela asụsụ ka ọ bụrụ Igbo.",
+  en: "Welcome to ReFarm. Language changed to English.",
+  yo: "Káàbọ̀ sí ReFarm. Èdè ti yípadà sí Yorùbá.",
+  ha: "Barka da zuwa ReFarm. An canza harshe zuwa Hausa.",
+  ig: "Nnọọ na ReFarm. Agbanweela asụsụ ka ọ bụrụ Igbo.",
 }
 
 export function LanguageSelector({ selectedLanguage, onLanguageChange }: LanguageSelectorProps) {

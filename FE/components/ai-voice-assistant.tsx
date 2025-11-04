@@ -265,7 +265,7 @@ function getTranslation(key: string, language: string): string {
   const translations = {
     en: {
       ai_assistant: "AI Assistant",
-      ai_welcome: "Hello! I can help you navigate ObodoFarm. Try saying 'show cooperative' or 'help me'",
+      ai_welcome: "Hello! I can help you navigate ReFarm. Try saying 'show cooperative' or 'help me'",
       listening: "Listening",
       start_listening: "Start Listening",
       stop_listening: "Stop Listening",
@@ -285,7 +285,7 @@ function getTranslation(key: string, language: string): string {
     },
     yo: {
       ai_assistant: "Oluranlọwọ AI",
-      ai_welcome: "Bawo! Mo le ran ọ lọwọ lati rin ObodoFarm. Gbiyanju sọ 'fi ajọṣepọ han' tabi 'ran mi lọwọ'",
+      ai_welcome: "Bawo! Mo le ran ọ lọwọ lati rin ReFarm. Gbiyanju sọ 'fi ajọṣepọ han' tabi 'ran mi lọwọ'",
       listening: "Gbigbọ",
       start_listening: "Bẹrẹ Gbigbọ",
       stop_listening: "Duro Gbigbọ",
@@ -304,7 +304,7 @@ function getTranslation(key: string, language: string): string {
     },
     ha: {
       ai_assistant: "Mataimakin AI",
-      ai_welcome: "Sannu! Zan iya taimaka muku a cikin ObodoFarm. Gwada cewa 'nuna haɗin kai' ko 'taimake ni'",
+      ai_welcome: "Sannu! Zan iya taimaka muku a cikin ReFarm. Gwada cewa 'nuna haɗin kai' ko 'taimake ni'",
       listening: "Sauraro",
       start_listening: "Fara Sauraro",
       stop_listening: "Dakatar Sauraro",
@@ -325,7 +325,7 @@ function getTranslation(key: string, language: string): string {
     ig: {
       ai_assistant: "Onye Inyeaka AI",
       ai_welcome:
-        "Ndewo! Enwere m ike inyere gị aka ịgagharị ObodoFarm. Gbalịa ịsị 'gosi nkwekọrịta' ma ọ bụ 'nyere m aka'",
+        "Ndewo! Enwere m ike inyere gị aka ịgagharị ReFarm. Gbalịa ịsị 'gosi nkwekọrịta' ma ọ bụ 'nyere m aka'",
       listening: "Na-ege Ntị",
       start_listening: "Malite Ige Ntị",
       stop_listening: "Kwụsị Ige Ntị",

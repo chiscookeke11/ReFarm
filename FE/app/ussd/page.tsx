@@ -30,7 +30,7 @@ export default function USSDPage() {
   const ussdSteps: Record<string, USSDStep> = {
     main: {
       id: "main",
-      title: "ObodoFarm USSD Menu",
+      title: "ReFarm USSD Menu",
       options: [
         { key: "1", text: "Register New Account", action: "register" },
         { key: "2", text: "Check Balance", action: "balance" },
@@ -182,7 +182,7 @@ export default function USSDPage() {
           {/* </Link> */}
           <div className="flex items-center gap-2 text-gray-300">
             <Phone className="w-5 h-5" />
-            <span className="text-sm">*123# - ObodoFarm</span>
+            <span className="text-sm">*123# - ReFarm</span>
           </div>
         </div>
 

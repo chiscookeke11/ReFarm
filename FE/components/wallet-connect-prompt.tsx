@@ -55,7 +55,7 @@ export function WalletConnectPrompt({ isOpen, onClose, onSkip }: WalletConnectPr
               Wallet Connected Successfully!
             </DialogTitle>
             <DialogDescription>
-              Your wallet is now connected and ready to use with ObodoFarm.
+              Your wallet is now connected and ready to use with ReFarm.
             </DialogDescription>
           </DialogHeader>
           <div className="flex flex-col gap-4 py-4">
@@ -92,10 +92,10 @@ export function WalletConnectPrompt({ isOpen, onClose, onSkip }: WalletConnectPr
             </Button>
           </div>
           <DialogDescription>
-            Connect your cryptocurrency wallet to unlock all ObodoFarm features
+            Connect your cryptocurrency wallet to unlock all ReFarm features
           </DialogDescription>
         </DialogHeader>
-        
+
         <div className="space-y-6 py-4">
           {/* Hero Section */}
           <div className="text-center">
@@ -120,7 +120,7 @@ export function WalletConnectPrompt({ isOpen, onClose, onSkip }: WalletConnectPr
                 ▼
               </span>
             </Button>
-            
+
             {showBenefits && (
               <div className="space-y-3 animate-in slide-in-from-top-2">
                 {benefits.map((benefit, index) => {
@@ -152,9 +152,9 @@ export function WalletConnectPrompt({ isOpen, onClose, onSkip }: WalletConnectPr
                 </Button>
               )}
             </ConnectButton.Custom>
-            
+
             <VoiceButton
-              text="Connect your cryptocurrency wallet to access secure payments, cooperative voting, and all blockchain features on ObodoFarm."
+              text="Connect your cryptocurrency wallet to access secure payments, cooperative voting, and all blockchain features on ReFarm."
               language={language as SupportedLanguage}
               className="w-full"
             />

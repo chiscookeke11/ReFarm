@@ -74,7 +74,7 @@ const getInitialChain = () => {
 const { wallets } = getDefaultWallets();
 
 const config = getDefaultConfig({
-    appName: "ObodoFarm",
+    appName: "ReFarm",
     projectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || "b7cfcf662095cd0ee1e06aa9eebd146a",
     wallets: [
         {

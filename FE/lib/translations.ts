@@ -16,7 +16,7 @@ export const translations = {
     logout: "Logout",
 
     // App specific
-    appName: "ObodoFarm",
+    appName: "ReFarm",
     appTagline: "Empowering Nigerian farmers through technology and cooperation",
     dashboard: "Dashboard",
     dashboardSubtitle: "Choose a service to get started",
@@ -72,7 +72,7 @@ export const translations = {
     logout: "Jade",
 
     // App specific
-    appName: "ObodoFarm",
+    appName: "ReFarm",
     appTagline: "Fifun agbẹ Naijiria lagbara nipasẹ imọ-ẹrọ ati ifowosowopo",
     dashboard: "Dashibodu",
     dashboardSubtitle: "Yan iṣẹ kan lati bẹrẹ",
@@ -128,7 +128,7 @@ export const translations = {
     logout: "Fita",
 
     // App specific
-    appName: "ObodoFarm",
+    appName: "ReFarm",
     appTagline: "Ƙarfafa manoman Najeriya ta hanyar fasaha da haɗin kai",
     dashboard: "Dashboard",
     dashboardSubtitle: "Zaɓi sabis don farawa",
@@ -184,7 +184,7 @@ export const translations = {
     logout: "Pụọ",
 
     // App specific
-    appName: "ObodoFarm",
+    appName: "ReFarm",
     appTagline: "Inyere ndị ọrụ ugbo Naịjirịa aka site na teknụzụ na nkwekọrịta",
     dashboard: "Dashboard",
     dashboardSubtitle: "Họrọ ọrụ iji malite",

@@ -64,7 +64,7 @@ export default function OnboardingPage() {
     },
     {
       id: "complete",
-      title: "Welcome to ObodoFarm!",
+      title: "Welcome to ReFarm!",
       subtitle: "Your account is ready",
       icon: CheckCircle,
     },
@@ -90,7 +90,7 @@ export default function OnboardingPage() {
   }
 
   const handleComplete = () => {
-    localStorage.setItem("obodofarm-user", JSON.stringify(formData))
+    localStorage.setItem("ReFarm-user", JSON.stringify(formData))
     localStorage.setItem("user_session", "active")
     // Show wallet prompt before going to dashboard
     setShowWalletPrompt(true)
@@ -317,7 +317,7 @@ export default function OnboardingPage() {
             <div className="text-6xl mb-4">🎉</div>
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-green-600">Registration Complete!</h3>
-              <p className="text-lg text-muted-foreground">Welcome to ObodoFarm, {formData.name}!</p>
+              <p className="text-lg text-muted-foreground">Welcome to ReFarm, {formData.name}!</p>
               <div className="bg-green-50 p-4 rounded-lg">
                 <p className="text-green-800">
                   Your account is ready. You can now access all cooperative features, vote on proposals, book transport,
@@ -329,7 +329,7 @@ export default function OnboardingPage() {
               Continue to Dashboard
             </Button>
             <VoiceButton
-              text="Congratulations! Your ObodoFarm account is ready. You can now access all features including voting, transport booking, and farming tips."
+              text="Congratulations! Your ReFarm account is ready. You can now access all features including voting, transport booking, and farming tips."
               language={formData.language}
               className="w-full"
             />
@@ -390,8 +390,8 @@ export default function OnboardingPage() {
               <div
                 key={step.id}
                 className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium ${
-                  index <= currentStep 
-                    ? "bg-green-500 text-black shadow-lg shadow-green-500/30" 
+                  index <= currentStep
+                    ? "bg-green-500 text-black shadow-lg shadow-green-500/30"
                     : "bg-gray-700 text-gray-400 border border-gray-600"
                 }`}
               >
@@ -431,9 +431,9 @@ export default function OnboardingPage() {
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back
             </Button>
-            <Button 
-              onClick={handleNext} 
-              className="flex-1 bg-green-500 hover:bg-green-600 text-black font-bold shadow-lg shadow-green-500/30 hover:shadow-green-500/40" 
+            <Button
+              onClick={handleNext}
+              className="flex-1 bg-green-500 hover:bg-green-600 text-black font-bold shadow-lg shadow-green-500/30 hover:shadow-green-500/40"
               disabled={!canProceed()}
             >
               Next

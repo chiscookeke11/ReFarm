@@ -48,7 +48,7 @@ export function VoiceButton({ text, language, className = "" }: VoiceButtonProps
   }
 
   return (
-    <Button onClick={handleSpeak} variant="outline" size="lg" className={`gap-2 ${className}`}>
+    <Button onClick={handleSpeak} variant="outline" size="lg" className={`gap-2 cursor-pointer ${className}`}>
       {isPlaying ? (
         <>
           <VolumeX className="w-5 h-5" />

@@ -146,22 +146,6 @@ export default function LandingPage() {
       </div>
 
       <div className="relative z-10">
-        {/* Sleek Black Header with Green Accents */}
-        {/* <header className="border-b border-green-500/20 bg-black/90 backdrop-blur-xl sticky top-0 z-50">
-          <div className="max-w-7xl mx-auto px-6 py-4">
-            <div className="flex justify-between items-center">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-gradient-to-br from-green-400 to-green-600 rounded-lg flex items-center justify-center shadow-lg shadow-green-500/30">
-                  <Users className="w-5 h-5 text-black font-bold" />
-                </div>
-                <h1 className="text-xl font-bold bg-gradient-to-r from-white to-green-300 bg-clip-text text-transparent tracking-tight">ObodoFarm</h1>
-              </div>
-              <div className="flex items-center gap-4">
-                <LanguageSelector selectedLanguage={selectedLanguage} onLanguageChange={setSelectedLanguage} />
-              </div>
-            </div>
-          </div>
-        </header> */}
 
         {/* Hero Section - Black & Green Elegance */}
         <section className="pt-20 pb-16 px-6">
@@ -184,7 +168,7 @@ export default function LandingPage() {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button
                     size="lg"
-                    className="bg-green-500 hover:bg-green-600 text-black px-8 py-3 rounded-lg font-bold transition-all duration-200 flex items-center gap-2 group shadow-lg shadow-green-500/30 hover:shadow-green-500/40"
+                    className="bg-green-500 hover:bg-green-600 text-black px-8 py-3 rounded-lg font-bold cursor-pointer transition-all duration-200 flex items-center gap-2 group shadow-lg shadow-green-500/30 hover:shadow-green-500/40"
                     onClick={() => (window.location.href = "/onboarding")}
                   >
                     <span>{getTranslation("get_started", selectedLanguage)}</span>
@@ -193,7 +177,7 @@ export default function LandingPage() {
                   <Button
                     variant="outline"
                     size="lg"
-                    className="border-green-500/60 text-green-400 hover:bg-green-500/10 hover:border-green-400 px-8 py-3 rounded-lg font-semibold transition-all duration-200 backdrop-blur-sm"
+                    className="border-green-500/60 text-green-400 hover:bg-green-500/10 cursor-pointer hover:border-green-400 px-8 py-3 rounded-lg font-semibold transition-all duration-200 backdrop-blur-sm"
                     onClick={() => (window.location.href = "/ussd")}
                   >
                     <Globe className="w-4 h-4 mr-2" />
@@ -245,7 +229,7 @@ export default function LandingPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {benefits.map((benefit, index) => {
                 const Icon = benefit.icon
                 return (
@@ -410,7 +394,7 @@ function getTranslation(key: string, language: string): string {
       gmv_processed: "GMV Processed",
       cost_reduction: "Cost Reduction",
       loan_success: "Loan Success Rate",
-      why_obodofarm: "Why Choose ObodoFarm?",
+      why_obodofarm: "Why Choose ReFarm?",
       cooperative_power: "Cooperative Power",
       cooperative_desc: "Pool resources, share costs, and make decisions together as a community with transparent governance",
       mobile_access: "Mobile First",
@@ -443,7 +427,7 @@ function getTranslation(key: string, language: string): string {
       voice_assistant_desc:
         "Get help anytime with our smart assistant that speaks your language and can take actions for you",
       cta_title: "Ready to Transform Your Farming?",
-      cta_desc: "Join the cooperative revolution and unlock the full potential of your farm with ObodoFarm",
+      cta_desc: "Join the cooperative revolution and unlock the full potential of your farm with ReFarm",
       start_farming_smart: "Start Farming Smart",
       find_cooperative: "Find Local Cooperative",
     },
@@ -461,7 +445,7 @@ function getTranslation(key: string, language: string): string {
       gmv_processed: "GMV Ti A Ṣe",
       cost_reduction: "Idinku Idiyele",
       loan_success: "Oṣuwọn Aṣeyọri Awin",
-      why_obodofarm: "Gịnị mere ị ga-eji họrọ ObodoFarm?",
+      why_obodofarm: "Gịnị mere ị ga-eji họrọ ReFarm?",
       cooperative_power: "Ƙarfin Haɗin Kai",
       cooperative_desc: "Haɗa albarkatu, raba farashi, kuma yanke shawara tare a matsayin al'umma tare da mulki mai bayyana",
       mobile_access: "Wayar Hannu Ta Farko",
@@ -494,7 +478,7 @@ function getTranslation(key: string, language: string): string {
       voice_assistant_desc:
         "Nweta enyemaka mgbe ọ bụla site na onye inyeaka anyị nwere ọgụgụ isi nke na-asụ asụsụ gị ma nwee ike ime ihe maka gị",
       cta_title: "Ị Dị Njikere Ịgbanwe Ọrụ Ugbo Gị?",
-      cta_desc: "Sonye na mgbanwe nkwekọrịta ma meghee ike zuru ezu nke ugbo gị na ObodoFarm",
+      cta_desc: "Sonye na mgbanwe nkwekọrịta ma meghee ike zuru ezu nke ugbo gị na ReFarm",
       start_farming_smart: "Malite Ọrụ Ugbo Amamihe",
       find_cooperative: "Chọta Nkwekọrịta Mpaghara",
     },

@@ -6,7 +6,7 @@ import { Providers } from './Providers'
 import { Header } from '@/components/header'
 
 export const metadata: Metadata = {
-  title: 'ObodoFarm | MVP',
+  title: 'ReFarm | MVP',
   description: '...decentralized Cooperative Platform for African Smallholder FarmersCreated with v0',
 }
 

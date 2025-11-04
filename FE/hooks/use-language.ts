@@ -7,7 +7,7 @@ export function useLanguage() {
 
   useEffect(() => {
     // Load saved language from localStorage
-    const savedLanguage = localStorage.getItem("obodofarm-language")
+    const savedLanguage = localStorage.getItem("ReFarm-language")
     if (savedLanguage) {
       setLanguage(savedLanguage)
     }
@@ -15,7 +15,7 @@ export function useLanguage() {
 
   const changeLanguage = (newLanguage: string) => {
     setLanguage(newLanguage)
-    localStorage.setItem("obodofarm-language", newLanguage)
+    localStorage.setItem("ReFarm-language", newLanguage)
   }
 
   return {

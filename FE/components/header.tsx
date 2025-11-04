@@ -30,7 +30,7 @@ interface HeaderProps {
 // Add type for supported languages
 type SupportedLanguage = 'en' | 'yo' | 'ha' | 'ig'
 
-export function Header({ showWalletConnect = true, showLogout = true, title }: HeaderProps) {
+export function Header({ showWalletConnect = true, showLogout = false, title }: HeaderProps) {
   const { language, changeLanguage } = useLanguage()
   // Type assertion to ensure language is a valid key
   const t = translations[language as SupportedLanguage] || translations.en
@@ -45,12 +45,12 @@ export function Header({ showWalletConnect = true, showLogout = true, title }: H
 
   function handleLogout() {
     localStorage.removeItem("user_session")
-    localStorage.removeItem("obodofarm-user")
+    localStorage.removeItem("ReFarm-user")
     window.location.href = "/"
   }
 
   const navigationItems = [
-    { href: "/dashboard", label: "Dashboard", icon: Home },
+    // { href: "/dashboard", label: "Dashboard", icon: Home },
     { href: "/cooperative", label: t.cooperative || "Cooperative", icon: Users },
     { href: "/marketplace", label: t.marketplace || "Marketplace", icon: ShoppingCart },
     { href: "/logistics", label: t.logistics || "Logistics", icon: Truck },
@@ -66,21 +66,21 @@ export function Header({ showWalletConnect = true, showLogout = true, title }: H
   return (
     <header className="fixed top-0 left-0 w-full z-50 border-b border-green-500/20 bg-black/90 backdrop-blur-xl">
       <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 py-3 sm:py-4">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between w-full ">
           {/* Logo and Title */}
-          <div className="flex items-center gap-2 sm:gap-4 min-w-0 flex-1">
+          <div className="flex items-center gap-2 sm:gap-4 min-w-0">
             <Link href="/" className="flex items-center gap-2 sm:gap-3 min-w-0">
               <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-b rounded-lg flex items-center justify-center shadow-lg shadow-green-500/30 flex-shrink-0">
                 <Image
                   src={"/pendant_logo.svg"}
-                  alt={"obodoFarm logo"}
+                  alt={"ReFarm logo"}
                   width={300}
                   height={300}
                   className=" sm:w-6 sm:h-6"
                 />
               </div>
               <h1 className="text-lg sm:text-xl font-bold bg-gradient-to-r from-white to-green-300 bg-clip-text text-transparent tracking-tight truncate">
-                ObodoFarm
+              ReFarm
               </h1>
             </Link>
             {title && (
@@ -158,7 +158,7 @@ export function Header({ showWalletConnect = true, showLogout = true, title }: H
                             return (
                               <Button
                                 onClick={openConnectModal}
-                                className="bg-green-500 hover:bg-green-600 text-black font-bold transition-all duration-200"
+                                className="bg-green-500 hover:bg-green-600 text-black font-bold transition-all duration-200 cursor-pointer"
                                 size="sm"
                               >
                                 Connect Wallet
@@ -184,7 +184,7 @@ export function Header({ showWalletConnect = true, showLogout = true, title }: H
                                 onClick={openChainModal}
                                 variant="outline"
                                 size="sm"
-                                className="hidden md:flex border-green-500/60 text-green-400 hover:bg-green-500/10 transition-all duration-200"
+                                className="hidden md:flex border-green-500/60 cursor-pointer text-green-400 hover:bg-green-500/10 transition-all duration-200"
                               >
                                 {chain.hasIcon && (
                                   <div
@@ -231,9 +231,9 @@ export function Header({ showWalletConnect = true, showLogout = true, title }: H
             )}
 
             {/* Voice Button - Hidden on small screens */}
-            <div className="hidden sm:block">
+            <div className="hidden sm:block cursor-pointer ">
               <VoiceButton
-                text={title ? `${title}. ${t.welcome} ObodoFarm` : `${t.welcome} ObodoFarm`}
+                text={title ? `${title}. ${t.welcome} ReFarm` : `${t.welcome} ReFarm`}
                 language={language as SupportedLanguage}
               />
             </div>
@@ -272,7 +272,7 @@ export function Header({ showWalletConnect = true, showLogout = true, title }: H
                     <div className="w-8 h-8 bg-gradient-to-br from-green-400 to-green-600 rounded-lg flex items-center justify-center shadow-lg shadow-green-500/30">
                       <Image
                         src={"/pendant_logo.svg"}
-                        alt={"obodoFarm logo"}
+                        alt={"ReFarm logo"}
                         width={100}
                         height={100}
                         className="w-5 h-5"
@@ -280,7 +280,7 @@ export function Header({ showWalletConnect = true, showLogout = true, title }: H
                     </div>
                     <div>
                       <SheetTitle className="text-white text-lg font-bold bg-gradient-to-r from-white to-green-300 bg-clip-text text-transparent">
-                        ObodoFarm
+                        ReFarm
                       </SheetTitle>
                       <SheetDescription className="text-gray-400 text-sm">
                         Navigate through the app features
@@ -338,7 +338,7 @@ export function Header({ showWalletConnect = true, showLogout = true, title }: H
                   <div className="p-3 bg-green-500/5 rounded-lg border border-green-500/20">
                     <div className="text-gray-300 text-sm font-medium mb-3">Voice Assistant</div>
                     <VoiceButton
-                      text={title ? `${title}. ${t.welcome} ObodoFarm` : `${t.welcome} ObodoFarm`}
+                      text={title ? `${title}. ${t.welcome} ReFarm` : `${t.welcome} ReFarm`}
                       language={language as SupportedLanguage}
                     />
                   </div>
